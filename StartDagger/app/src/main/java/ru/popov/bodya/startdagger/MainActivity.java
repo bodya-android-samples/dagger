@@ -37,6 +37,6 @@ public class MainActivity extends AppCompatActivity {
         app.getInjectAppComponent().injectsMainActivity(this);
 
         Log.e(TAG, "injectedDatabaseHelper: " + mInjectedDatabaseHelper);
-        Log.e(TAG, "injectedNetworkUtils: " + mInjectedNetworkUtils);
+        Log.e(TAG, "injectedNetworkUtils for super test: " + mInjectedNetworkUtils);
     }
 }
