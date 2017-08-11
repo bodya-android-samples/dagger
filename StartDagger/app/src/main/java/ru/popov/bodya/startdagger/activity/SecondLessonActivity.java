@@ -9,8 +9,7 @@ import javax.inject.Inject;
 
 import dagger.Lazy;
 import ru.popov.bodya.startdagger.Application;
-import ru.popov.bodya.startdagger.bean.DatabaseHelper;
-import ru.popov.bodya.startdagger.di.qualifier.ReleaseDatabaseHelper;
+import ru.popov.bodya.startdagger.model.bean.DatabaseHelper;
 import ru.popov.bodya.startdagger.di.qualifier.TestDatabaseHelper;
 
 /**
@@ -37,8 +36,10 @@ public class SecondLessonActivity extends AppCompatActivity {
         app.getInjectAppComponent().injectsSecondLessonActivity(this);
 
         Log.e(TAG, "provider: " + mDatabaseUtilsProvider.toString());
-        DatabaseHelper databaseHelper = mDatabaseUtilsProvider.get();
-        Log.e(TAG, "helper: " + databaseHelper);
+        DatabaseHelper databaseHelper1 = mDatabaseUtilsProvider.get();
+        DatabaseHelper databaseHelper2 = mDatabaseUtilsProvider.get();
+        Log.e(TAG, "helper1: " + databaseHelper1);
+        Log.e(TAG, "helper2: " + databaseHelper2);
 
 
         mTestDatabaseHelper = app.getAppComponent().getTestDatabaseHelper();

@@ -1,4 +1,4 @@
-package ru.popov.bodya.startdagger.bean;
+package ru.popov.bodya.startdagger.model.bean;
 
 /**
  * @author Bogdan Popov

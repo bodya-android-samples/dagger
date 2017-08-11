@@ -1,10 +1,8 @@
 package ru.popov.bodya.startdagger.di.module;
 
-import javax.inject.Singleton;
-
 import dagger.Module;
 import dagger.Provides;
-import ru.popov.bodya.startdagger.bean.NetworkUtils;
+import ru.popov.bodya.startdagger.model.bean.NetworkUtils;
 
 /**
  * @author Bogdan Popov

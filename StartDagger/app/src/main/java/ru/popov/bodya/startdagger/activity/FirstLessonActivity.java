@@ -8,8 +8,8 @@ import javax.inject.Inject;
 
 import ru.popov.bodya.startdagger.Application;
 import ru.popov.bodya.startdagger.R;
-import ru.popov.bodya.startdagger.bean.DatabaseHelper;
-import ru.popov.bodya.startdagger.bean.NetworkUtils;
+import ru.popov.bodya.startdagger.model.bean.DatabaseHelper;
+import ru.popov.bodya.startdagger.model.bean.NetworkUtils;
 import ru.popov.bodya.startdagger.di.qualifier.ReleaseDatabaseHelper;
 
 
