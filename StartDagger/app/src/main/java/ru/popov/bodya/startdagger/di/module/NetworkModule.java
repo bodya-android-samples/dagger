@@ -1,4 +1,4 @@
-package ru.popov.bodya.startdagger.di;
+package ru.popov.bodya.startdagger.di.module;
 
 import javax.inject.Singleton;
 

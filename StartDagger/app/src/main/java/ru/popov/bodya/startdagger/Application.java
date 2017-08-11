@@ -1,9 +1,9 @@
 package ru.popov.bodya.startdagger;
 
-import ru.popov.bodya.startdagger.di.AppComponent;
-import ru.popov.bodya.startdagger.di.DaggerAppComponent;
-import ru.popov.bodya.startdagger.di.DaggerInjectAppComponent;
-import ru.popov.bodya.startdagger.di.InjectAppComponent;
+import ru.popov.bodya.startdagger.di.component.AppComponent;
+import ru.popov.bodya.startdagger.di.component.DaggerAppComponent;
+import ru.popov.bodya.startdagger.di.component.DaggerInjectAppComponent;
+import ru.popov.bodya.startdagger.di.component.InjectAppComponent;
 
 /**
  * @author Bogdan Popov

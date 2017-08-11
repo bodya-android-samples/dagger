@@ -1,4 +1,4 @@
-package ru.popov.bodya.startdagger;
+package ru.popov.bodya.startdagger.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,13 +6,22 @@ import android.util.Log;
 
 import javax.inject.Inject;
 
+import ru.popov.bodya.startdagger.Application;
+import ru.popov.bodya.startdagger.R;
 import ru.popov.bodya.startdagger.bean.DatabaseHelper;
 import ru.popov.bodya.startdagger.bean.NetworkUtils;
+import ru.popov.bodya.startdagger.di.qualifier.ReleaseDatabaseHelper;
 
-public class MainActivity extends AppCompatActivity {
 
-    private static final String TAG = MainActivity.class.getSimpleName();
+/**
+ * @author Bogdan Popov
+ */
 
+public class FirstLessonActivity extends AppCompatActivity {
+
+    private static final String TAG = FirstLessonActivity.class.getSimpleName();
+
+    @ReleaseDatabaseHelper
     @Inject
     DatabaseHelper mInjectedDatabaseHelper;
 
@@ -25,16 +34,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.first_activity_main);
 
         Application app = (Application) getApplication();
-        mDatabaseHelper = app.getAppComponent().getDatabaseHelper();
+        mDatabaseHelper = app.getAppComponent().getTestDatabaseHelper();
         mNetworkUtils = app.getAppComponent().getNetworkUtils();
 
         Log.e(TAG, "databaseHelper: " + mDatabaseHelper);
         Log.e(TAG, "networkUtils: " + mNetworkUtils);
 
-        app.getInjectAppComponent().injectsMainActivity(this);
+        app.getInjectAppComponent().injectsFirstLessonActivity(this);
 
         Log.e(TAG, "injectedDatabaseHelper with test: " + mInjectedDatabaseHelper);
         Log.e(TAG, "injectedNetworkUtils: " + mInjectedNetworkUtils);
