@@ -12,7 +12,6 @@ import ru.popov.bodya.startdagger.di.qualifier.TestDatabaseHelper;
  * @author Bogdan Popov
  */
 
-
 @Component(modules = {StorageModule.class, NetworkModule.class})
 public interface AppComponent {
 

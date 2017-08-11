@@ -12,7 +12,6 @@ import ru.popov.bodya.startdagger.model.bean.DatabaseHelper;
 import ru.popov.bodya.startdagger.model.bean.NetworkUtils;
 import ru.popov.bodya.startdagger.di.qualifier.ReleaseDatabaseHelper;
 
-
 /**
  * @author Bogdan Popov
  */
@@ -28,20 +27,17 @@ public class FirstLessonActivity extends AppCompatActivity {
     @Inject
     NetworkUtils mInjectedNetworkUtils;
 
-    private DatabaseHelper mDatabaseHelper;
-    private NetworkUtils mNetworkUtils;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_activity_main);
 
         Application app = (Application) getApplication();
-        mDatabaseHelper = app.getAppComponent().getTestDatabaseHelper();
-        mNetworkUtils = app.getAppComponent().getNetworkUtils();
+        DatabaseHelper databaseHelper = app.getAppComponent().getTestDatabaseHelper();
+        NetworkUtils networkUtils = app.getAppComponent().getNetworkUtils();
 
-        Log.e(TAG, "databaseHelper: " + mDatabaseHelper);
-        Log.e(TAG, "networkUtils: " + mNetworkUtils);
+        Log.e(TAG, "databaseHelper: " + databaseHelper);
+        Log.e(TAG, "networkUtils: " + networkUtils);
 
         app.getInjectAppComponent().injectsFirstLessonActivity(this);
 

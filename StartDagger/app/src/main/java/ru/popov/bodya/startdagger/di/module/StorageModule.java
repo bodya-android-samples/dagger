@@ -13,13 +13,11 @@ import ru.popov.bodya.startdagger.di.qualifier.TestDatabaseHelper;
 @Module
 public class StorageModule {
 
-
     @ReleaseDatabaseHelper
     @Provides
     DatabaseHelper provideReleaseDatabaseHelper() {
         return new DatabaseHelper("release.db");
     }
-
 
     @TestDatabaseHelper
     @Provides

@@ -20,13 +20,11 @@ import ru.popov.bodya.startdagger.di.qualifier.TestDatabaseHelper;
  * @author Bogdan Popov
  */
 
-
 public class SecondLessonActivity extends AppCompatActivity {
 
     private static final String TAG = SecondLessonActivity.class.getSimpleName();
     private static final String ELEMENTS_INTO_SET = "elements_into_set";
     private static final String INTO_SET = "into_set";
-
 
     @Inject
     @TestDatabaseHelper
@@ -35,9 +33,6 @@ public class SecondLessonActivity extends AppCompatActivity {
     @Inject
     @Named(INTO_SET)
     Set<EventHandler> mEventHandlers;
-
-    private DatabaseHelper mTestDatabaseHelper;
-    private DatabaseHelper mReleaseDatabaseHelper;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -53,11 +48,11 @@ public class SecondLessonActivity extends AppCompatActivity {
         Log.e(TAG, "helper2: " + databaseHelper2);
 
 
-        mTestDatabaseHelper = app.getAppComponent().getTestDatabaseHelper();
-        mReleaseDatabaseHelper = app.getAppComponent().getReleaseDatabaseHelper();
+        DatabaseHelper testDatabaseHelper = app.getAppComponent().getTestDatabaseHelper();
+        DatabaseHelper releaseDatabaseHelper = app.getAppComponent().getReleaseDatabaseHelper();
 
-        Log.e(TAG, "test database helper: " + mTestDatabaseHelper);
-        Log.e(TAG, "release database helper: " + mReleaseDatabaseHelper);
+        Log.e(TAG, "test database helper: " + testDatabaseHelper);
+        Log.e(TAG, "release database helper: " + releaseDatabaseHelper);
 
         Log.e(TAG, "mEventHandlers size: " + mEventHandlers.size());
     }

@@ -44,7 +44,6 @@ public class EventHandlerModule {
         return new Logger();
     }
 
-
     @Provides
     @ElementsIntoSet
     @Named(ELEMENTS_INTO_SET)

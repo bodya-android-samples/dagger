@@ -9,7 +9,6 @@ import ru.popov.bodya.startdagger.di.component.InjectAppComponent;
  * @author Bogdan Popov
  */
 
-
 public class Application extends android.app.Application {
 
     private AppComponent mAppComponent;
