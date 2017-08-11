@@ -5,10 +5,13 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
+import java.util.Set;
+
 import javax.inject.Inject;
 
 import dagger.Lazy;
 import ru.popov.bodya.startdagger.Application;
+import ru.popov.bodya.startdagger.model.EventHandler;
 import ru.popov.bodya.startdagger.model.bean.DatabaseHelper;
 import ru.popov.bodya.startdagger.di.qualifier.TestDatabaseHelper;
 
@@ -24,6 +27,9 @@ public class SecondLessonActivity extends AppCompatActivity {
     @Inject
     @TestDatabaseHelper
     Lazy<DatabaseHelper> mDatabaseUtilsProvider;
+
+    @Inject
+    Set<EventHandler> mEventHandlers;
 
     private DatabaseHelper mTestDatabaseHelper;
     private DatabaseHelper mReleaseDatabaseHelper;
@@ -48,5 +54,6 @@ public class SecondLessonActivity extends AppCompatActivity {
         Log.e(TAG, "test database helper: " + mTestDatabaseHelper);
         Log.e(TAG, "release database helper: " + mReleaseDatabaseHelper);
 
+        Log.e(TAG, "mEventHandlers size: " + mEventHandlers.size());
     }
 }

@@ -7,5 +7,5 @@ import ru.popov.bodya.startdagger.model.EventHandler;
  */
 
 
-public class AnalyticsManager implements EventHandler {
+public class Logger implements EventHandler {
 }

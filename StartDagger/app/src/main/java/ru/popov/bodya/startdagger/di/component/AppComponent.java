@@ -15,6 +15,7 @@ import ru.popov.bodya.startdagger.di.qualifier.TestDatabaseHelper;
 
 @Component(modules = {StorageModule.class, NetworkModule.class})
 public interface AppComponent {
+
     NetworkUtils getNetworkUtils();
 
     @TestDatabaseHelper
