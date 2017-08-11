@@ -8,6 +8,7 @@ import android.util.Log;
 import java.util.Set;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
 import dagger.Lazy;
 import ru.popov.bodya.startdagger.Application;
@@ -23,12 +24,15 @@ import ru.popov.bodya.startdagger.di.qualifier.TestDatabaseHelper;
 public class SecondLessonActivity extends AppCompatActivity {
 
     private static final String TAG = SecondLessonActivity.class.getSimpleName();
+    private static final String ELEMENTS_INTO_SET = "elements_into_set";
+
 
     @Inject
     @TestDatabaseHelper
     Lazy<DatabaseHelper> mDatabaseUtilsProvider;
 
     @Inject
+    @Named(ELEMENTS_INTO_SET)
     Set<EventHandler> mEventHandlers;
 
     private DatabaseHelper mTestDatabaseHelper;
