@@ -25,6 +25,7 @@ public class SecondLessonActivity extends AppCompatActivity {
 
     private static final String TAG = SecondLessonActivity.class.getSimpleName();
     private static final String ELEMENTS_INTO_SET = "elements_into_set";
+    private static final String INTO_SET = "into_set";
 
 
     @Inject
@@ -32,7 +33,7 @@ public class SecondLessonActivity extends AppCompatActivity {
     Lazy<DatabaseHelper> mDatabaseUtilsProvider;
 
     @Inject
-    @Named(ELEMENTS_INTO_SET)
+    @Named(INTO_SET)
     Set<EventHandler> mEventHandlers;
 
     private DatabaseHelper mTestDatabaseHelper;

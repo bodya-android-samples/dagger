@@ -35,7 +35,12 @@ public class EventHandlerModule {
     @Provides
     @IntoSet
     @Named(INTO_SET)
-    EventHandler provideLogger() {
+    EventHandler provideEventLogger(Logger logger) {
+        return logger;
+    }
+
+    @Provides
+    Logger provideLogger() {
         return new Logger();
     }
 
@@ -43,8 +48,8 @@ public class EventHandlerModule {
     @Provides
     @ElementsIntoSet
     @Named(ELEMENTS_INTO_SET)
-    Set<EventHandler> provideEventHandlerSet() {
-        return new HashSet<>(Arrays.asList(new AnalyticsManager(), new Logger(), new Logger()));
+    Set<EventHandler> provideEventHandlerSet(Logger logger) {
+        return new HashSet<>(Arrays.asList(new AnalyticsManager(), new Logger(), new Logger(), logger));
     }
 
 
