@@ -48,6 +48,4 @@ public class EventHandlerModule {
     Set<EventHandler> provideEventHandlerSet(Logger logger) {
         return new HashSet<>(Arrays.asList(new AnalyticsManager(), new Logger(), new Logger(), logger));
     }
-
-
 }

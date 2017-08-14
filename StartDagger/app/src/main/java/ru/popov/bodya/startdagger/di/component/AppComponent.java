@@ -1,5 +1,7 @@
 package ru.popov.bodya.startdagger.di.component;
 
+import javax.inject.Singleton;
+
 import dagger.Component;
 import ru.popov.bodya.startdagger.model.bean.DatabaseHelper;
 import ru.popov.bodya.startdagger.model.bean.NetworkUtils;
@@ -11,6 +13,7 @@ import ru.popov.bodya.startdagger.di.qualifier.TestDatabaseHelper;
 /**
  * @author Bogdan Popov
  */
+@Singleton
 @Component(modules = {StorageModule.class, NetworkModule.class})
 public interface AppComponent {
 
