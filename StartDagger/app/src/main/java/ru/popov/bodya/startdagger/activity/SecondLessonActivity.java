@@ -12,14 +12,18 @@ import javax.inject.Named;
 
 import dagger.Lazy;
 import ru.popov.bodya.startdagger.Application;
+import ru.popov.bodya.startdagger.di.component.AppComponent;
+import ru.popov.bodya.startdagger.di.component.ChildComponent;
 import ru.popov.bodya.startdagger.model.EventHandler;
 import ru.popov.bodya.startdagger.model.bean.DatabaseHelper;
 import ru.popov.bodya.startdagger.di.qualifier.TestDatabaseHelper;
+import ru.popov.bodya.startdagger.utils.Logger;
+
+import static ru.popov.bodya.startdagger.utils.Logger.logClass;
 
 /**
  * @author Bogdan Popov
  */
-
 public class SecondLessonActivity extends AppCompatActivity {
 
     private static final String TAG = SecondLessonActivity.class.getSimpleName();
@@ -41,19 +45,20 @@ public class SecondLessonActivity extends AppCompatActivity {
         Application app = (Application) getApplication();
         app.getInjectAppComponent().injectsSecondLessonActivity(this);
 
-        Log.e(TAG, "provider: " + mDatabaseUtilsProvider.toString());
+        AppComponent appComponent = app.getAppComponent();
+        ChildComponent childComponent = appComponent.createChildComponent();
+
+        logClass(TAG, mDatabaseUtilsProvider);
         DatabaseHelper databaseHelper1 = mDatabaseUtilsProvider.get();
         DatabaseHelper databaseHelper2 = mDatabaseUtilsProvider.get();
-        Log.e(TAG, "helper1: " + databaseHelper1);
-        Log.e(TAG, "helper2: " + databaseHelper2);
+        logClass(TAG, databaseHelper1);
+        logClass(TAG, databaseHelper2);
 
+        DatabaseHelper testDatabaseHelper = childComponent.getTestDatabaseHelper();
+        DatabaseHelper releaseDatabaseHelper = childComponent.getReleaseDatabaseHelper();
 
-        DatabaseHelper testDatabaseHelper = app.getAppComponent().getTestDatabaseHelper();
-        DatabaseHelper releaseDatabaseHelper = app.getAppComponent().getReleaseDatabaseHelper();
-
-        Log.e(TAG, "test database helper: " + testDatabaseHelper);
-        Log.e(TAG, "release database helper: " + releaseDatabaseHelper);
-
+        logClass(TAG, testDatabaseHelper);
+        logClass(TAG, releaseDatabaseHelper);
         Log.e(TAG, "mEventHandlers size: " + mEventHandlers.size());
     }
 }

@@ -7,6 +7,8 @@ import javax.inject.Inject;
 
 import ru.popov.bodya.startdagger.Application;
 import ru.popov.bodya.startdagger.R;
+import ru.popov.bodya.startdagger.di.component.AppComponent;
+import ru.popov.bodya.startdagger.di.component.ChildComponent;
 import ru.popov.bodya.startdagger.model.bean.DatabaseHelper;
 import ru.popov.bodya.startdagger.model.bean.NetworkUtils;
 import ru.popov.bodya.startdagger.di.qualifier.ReleaseDatabaseHelper;
@@ -33,14 +35,16 @@ public class FirstLessonActivity extends AppCompatActivity {
         setContentView(R.layout.first_activity_main);
 
         Application app = (Application) getApplication();
+        AppComponent appComponent = app.getAppComponent();
+        ChildComponent childComponent = app.getChildComponent();
 
-        DatabaseHelper databaseHelper = app.getAppComponent().getTestDatabaseHelper();
+        DatabaseHelper databaseHelper = childComponent.getTestDatabaseHelper();
         logClass(TAG, databaseHelper);
 
-        NetworkUtils networkUtils1 = app.getAppComponent().getNetworkUtils();
+        NetworkUtils networkUtils1 = appComponent.getNetworkUtils();
         logClass(TAG, networkUtils1);
 
-        NetworkUtils networkUtils2 = app.getAppComponent().getNetworkUtils();
+        NetworkUtils networkUtils2 = appComponent.getNetworkUtils();
         logClass(TAG, networkUtils2);
 
         app.getInjectAppComponent().injectsFirstLessonActivity(this);

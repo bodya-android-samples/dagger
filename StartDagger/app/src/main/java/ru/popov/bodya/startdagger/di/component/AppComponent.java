@@ -14,14 +14,10 @@ import ru.popov.bodya.startdagger.di.qualifier.TestDatabaseHelper;
  * @author Bogdan Popov
  */
 @Singleton
-@Component(modules = {StorageModule.class, NetworkModule.class})
+@Component(modules = {NetworkModule.class})
 public interface AppComponent {
 
+    ChildComponent createChildComponent();
+
     NetworkUtils getNetworkUtils();
-
-    @TestDatabaseHelper
-    DatabaseHelper getTestDatabaseHelper();
-
-    @ReleaseDatabaseHelper
-    DatabaseHelper getReleaseDatabaseHelper();
 }
