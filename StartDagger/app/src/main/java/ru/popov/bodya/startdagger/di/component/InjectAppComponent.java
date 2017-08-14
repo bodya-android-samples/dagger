@@ -10,7 +10,6 @@ import ru.popov.bodya.startdagger.di.module.StorageModule;
 /**
  * @author Bogdan Popov
  */
-
 @Component(modules = {StorageModule.class, NetworkModule.class, EventHandlerModule.class})
 public interface InjectAppComponent {
     void injectsFirstLessonActivity(FirstLessonActivity firstLessonActivity);

@@ -31,7 +31,7 @@ public class SecondLessonActivity extends AppCompatActivity {
     Lazy<DatabaseHelper> mDatabaseUtilsProvider;
 
     @Inject
-    @Named(INTO_SET)
+    @Named(ELEMENTS_INTO_SET)
     Set<EventHandler> mEventHandlers;
 
     @Override

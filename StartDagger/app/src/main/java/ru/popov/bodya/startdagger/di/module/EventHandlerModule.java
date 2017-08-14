@@ -17,8 +17,6 @@ import ru.popov.bodya.startdagger.model.bean.Logger;
 /**
  * @author Bogdan Popov
  */
-
-
 @Module
 public class EventHandlerModule {
 

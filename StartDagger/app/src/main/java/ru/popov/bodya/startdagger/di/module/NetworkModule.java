@@ -7,7 +7,6 @@ import ru.popov.bodya.startdagger.model.bean.NetworkUtils;
 /**
  * @author Bogdan Popov
  */
-
 @Module
 public class NetworkModule {
 

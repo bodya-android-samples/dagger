@@ -15,7 +15,6 @@ import ru.popov.bodya.startdagger.di.qualifier.ReleaseDatabaseHelper;
 /**
  * @author Bogdan Popov
  */
-
 public class FirstLessonActivity extends AppCompatActivity {
 
     private static final String TAG = FirstLessonActivity.class.getSimpleName();

@@ -9,7 +9,6 @@ import ru.popov.bodya.startdagger.di.qualifier.TestDatabaseHelper;
 /**
  * @author Bogdan Popov
  */
-
 @Module
 public class StorageModule {
 

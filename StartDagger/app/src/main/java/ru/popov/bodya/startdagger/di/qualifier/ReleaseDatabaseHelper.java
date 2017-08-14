@@ -8,7 +8,6 @@ import javax.inject.Qualifier;
 /**
  * @author Bogdan Popov
  */
-
 @Qualifier
 @Retention(RetentionPolicy.RUNTIME)
 public @interface ReleaseDatabaseHelper {
