@@ -6,6 +6,7 @@ import ru.popov.bodya.startdagger.di.module.StorageModule;
 import ru.popov.bodya.startdagger.di.qualifier.ReleaseDatabaseHelper;
 import ru.popov.bodya.startdagger.di.qualifier.TestDatabaseHelper;
 import ru.popov.bodya.startdagger.model.bean.DatabaseHelper;
+import ru.popov.bodya.startdagger.model.bean.NetworkUtils;
 
 /**
  * @author Bogdan Popov
@@ -18,5 +19,7 @@ public interface ChildComponent {
 
     @ReleaseDatabaseHelper
     DatabaseHelper getReleaseDatabaseHelper();
+
+    NetworkUtils getNetworkUtils();
 
 }

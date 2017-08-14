@@ -17,6 +17,7 @@ import ru.popov.bodya.startdagger.di.component.ChildComponent;
 import ru.popov.bodya.startdagger.model.EventHandler;
 import ru.popov.bodya.startdagger.model.bean.DatabaseHelper;
 import ru.popov.bodya.startdagger.di.qualifier.TestDatabaseHelper;
+import ru.popov.bodya.startdagger.model.bean.NetworkUtils;
 import ru.popov.bodya.startdagger.utils.Logger;
 
 import static ru.popov.bodya.startdagger.utils.Logger.logClass;
@@ -60,5 +61,9 @@ public class SecondLessonActivity extends AppCompatActivity {
         logClass(TAG, testDatabaseHelper);
         logClass(TAG, releaseDatabaseHelper);
         Log.e(TAG, "mEventHandlers size: " + mEventHandlers.size());
+
+
+        NetworkUtils networkUtils = childComponent.getNetworkUtils();
+        logClass(TAG, networkUtils);
     }
 }
