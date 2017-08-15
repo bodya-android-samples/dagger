@@ -1,12 +1,16 @@
-package ru.popov.bodya.daggerplussmallclean;
+package ru.popov.bodya.daggerplussmallclean.data.application;
 
 import android.app.Application;
 
+import ru.popov.bodya.daggerplussmallclean.di.app.AppComponent;
+import ru.popov.bodya.daggerplussmallclean.DaggerAppComponent;
 import ru.popov.bodya.daggerplussmallclean.data.Account;
 import ru.popov.bodya.daggerplussmallclean.di.mail.MailComponent;
 import ru.popov.bodya.daggerplussmallclean.di.mail.MailModule;
 
-
+/**
+ * @author Bogdan Popov
+ */
 public class App extends Application {
 
     private static App sInstance;

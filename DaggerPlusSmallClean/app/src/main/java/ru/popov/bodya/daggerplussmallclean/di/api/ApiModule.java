@@ -8,13 +8,18 @@ import dagger.Module;
 import dagger.Provides;
 import ru.popov.bodya.daggerplussmallclean.business.api.ApiService;
 
+/**
+ * @author Bogdan Popov
+ */
 @Module
 public class ApiModule {
 
+    private static final String TAG = ApiModule.class.getSimpleName();
+
     @Provides
     @Singleton
-    public ApiService provideApiService() {
-        Log.d("qweee", "new apiservice");
+    ApiService provideApiService() {
+        Log.e(TAG, "providing new API service");
         return new ApiService();
     }
 

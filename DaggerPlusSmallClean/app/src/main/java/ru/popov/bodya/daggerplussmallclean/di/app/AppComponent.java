@@ -1,4 +1,4 @@
-package ru.popov.bodya.daggerplussmallclean;
+package ru.popov.bodya.daggerplussmallclean.di.app;
 
 import javax.inject.Singleton;
 
@@ -8,6 +8,9 @@ import ru.popov.bodya.daggerplussmallclean.di.login.LoginActivityComponent;
 import ru.popov.bodya.daggerplussmallclean.di.mail.MailComponent;
 import ru.popov.bodya.daggerplussmallclean.di.mail.MailModule;
 
+/**
+ * @author Bogdan Popov
+ */
 @Singleton
 @Component(modules = {ApiModule.class})
 public interface AppComponent {

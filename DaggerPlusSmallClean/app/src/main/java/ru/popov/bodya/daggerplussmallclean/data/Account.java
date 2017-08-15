@@ -2,6 +2,9 @@ package ru.popov.bodya.daggerplussmallclean.data;
 
 import java.util.Date;
 
+/**
+ * @author Bogdan Popov
+ */
 public class Account {
 
     private String login;

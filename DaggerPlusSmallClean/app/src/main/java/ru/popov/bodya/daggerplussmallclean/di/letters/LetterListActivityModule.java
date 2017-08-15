@@ -8,6 +8,9 @@ import ru.popov.bodya.daggerplussmallclean.presentation.folders.model.Folder;
 import ru.popov.bodya.daggerplussmallclean.presentation.letters.presenter.ILettersPresenter;
 import ru.popov.bodya.daggerplussmallclean.presentation.letters.presenter.LetterListActivityPresenter;
 
+/**
+ * @author Bogdan Popov
+ */
 @Module
 public class LetterListActivityModule {
 

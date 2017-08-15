@@ -1,5 +1,8 @@
 package ru.popov.bodya.daggerplussmallclean.presentation.letters.model;
 
+/**
+ * @author Bogdan Popov
+ */
 public class Letter {
 
     private String subject;

@@ -4,6 +4,9 @@ import dagger.Subcomponent;
 import ru.popov.bodya.daggerplussmallclean.di.common.ActivityScope;
 import ru.popov.bodya.daggerplussmallclean.presentation.letters.view.LetterListActivity;
 
+/**
+ * @author Bogdan Popov
+ */
 @ActivityScope
 @Subcomponent(modules = LetterListActivityModule.class)
 public interface LetterListActivityComponent {

@@ -5,6 +5,9 @@ import ru.popov.bodya.daggerplussmallclean.business.mail.MailManager;
 import ru.popov.bodya.daggerplussmallclean.presentation.folders.model.Folder;
 import ru.popov.bodya.daggerplussmallclean.presentation.letters.view.ILettersView;
 
+/**
+ * @author Bogdan Popov
+ */
 public class LetterListActivityPresenter implements ILettersPresenter {
 
     private ILettersView mView;

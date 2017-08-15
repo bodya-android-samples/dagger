@@ -13,12 +13,15 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import ru.popov.bodya.daggerplussmallclean.App;
+import ru.popov.bodya.daggerplussmallclean.data.application.App;
 import ru.popov.bodya.daggerplussmallclean.R;
 import ru.popov.bodya.daggerplussmallclean.presentation.folders.model.Folder;
 import ru.popov.bodya.daggerplussmallclean.presentation.folders.presenter.IFoldersPresenter;
 import ru.popov.bodya.daggerplussmallclean.presentation.letters.view.LetterListActivity;
 
+/**
+ * @author Bogdan Popov
+ */
 public class FolderListActivity extends AppCompatActivity implements IFoldersView {
 
     private static final String TAG = FolderListActivity.class.getSimpleName();

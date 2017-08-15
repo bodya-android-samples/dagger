@@ -9,13 +9,16 @@ import java.util.List;
 
 import javax.inject.Inject;
 
-import ru.popov.bodya.daggerplussmallclean.App;
+import ru.popov.bodya.daggerplussmallclean.data.application.App;
 import ru.popov.bodya.daggerplussmallclean.R;
 import ru.popov.bodya.daggerplussmallclean.di.letters.LetterListActivityModule;
 import ru.popov.bodya.daggerplussmallclean.presentation.folders.model.Folder;
 import ru.popov.bodya.daggerplussmallclean.presentation.letters.model.Letter;
 import ru.popov.bodya.daggerplussmallclean.presentation.letters.presenter.ILettersPresenter;
 
+/**
+ * @author Bogdan Popov
+ */
 public class LetterListActivity extends AppCompatActivity implements ILettersView {
 
     @Inject

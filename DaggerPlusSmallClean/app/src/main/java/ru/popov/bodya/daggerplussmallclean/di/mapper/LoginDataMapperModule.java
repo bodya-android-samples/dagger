@@ -18,7 +18,7 @@ public class LoginDataMapperModule {
 
     @Provides
     @Singleton
-    public LoginDataMapper provideLoginDataMapper() {
+    LoginDataMapper provideLoginDataMapper() {
         Log.e(TAG, "providing mapLoginData data mapper");
         return new LoginDataMapper();
     }

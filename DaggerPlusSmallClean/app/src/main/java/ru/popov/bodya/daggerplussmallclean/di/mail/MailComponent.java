@@ -5,6 +5,9 @@ import ru.popov.bodya.daggerplussmallclean.di.folders.FolderListActivityComponen
 import ru.popov.bodya.daggerplussmallclean.di.letters.LetterListActivityComponent;
 import ru.popov.bodya.daggerplussmallclean.di.letters.LetterListActivityModule;
 
+/**
+ * @author Bogdan Popov
+ */
 @MailScope
 @Subcomponent(modules = MailModule.class)
 public interface MailComponent {

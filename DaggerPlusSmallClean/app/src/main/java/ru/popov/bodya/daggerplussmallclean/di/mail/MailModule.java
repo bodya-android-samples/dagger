@@ -7,6 +7,9 @@ import ru.popov.bodya.daggerplussmallclean.business.api.ApiService;
 import ru.popov.bodya.daggerplussmallclean.business.mail.MailManager;
 import ru.popov.bodya.daggerplussmallclean.data.Account;
 
+/**
+ * @author Bogdan Popov
+ */
 @Module
 public class MailModule {
 
@@ -17,7 +20,7 @@ public class MailModule {
     }
 
     @Provides
-    public Account provideAccount() {
+    Account provideAccount() {
         return account;
     }
 

@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 import javax.inject.Inject;
 
-import ru.popov.bodya.daggerplussmallclean.App;
+import ru.popov.bodya.daggerplussmallclean.data.application.App;
 import ru.popov.bodya.daggerplussmallclean.R;
 import ru.popov.bodya.daggerplussmallclean.data.Account;
 import ru.popov.bodya.daggerplussmallclean.di.login.LoginActivityComponent;
@@ -18,6 +18,9 @@ import ru.popov.bodya.daggerplussmallclean.presentation.folders.view.FolderListA
 import ru.popov.bodya.daggerplussmallclean.presentation.login.model.LoginData;
 import ru.popov.bodya.daggerplussmallclean.presentation.login.presenter.ILoginPresenter;
 
+/**
+ * @author Bogdan Popov
+ */
 public class LoginActivity extends AppCompatActivity implements ILoginView {
 
     private static final String TAG = LoginActivity.class.getSimpleName();

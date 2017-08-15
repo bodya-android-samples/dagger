@@ -10,6 +10,9 @@ import ru.popov.bodya.daggerplussmallclean.presentation.login.model.LoginDataMap
 import ru.popov.bodya.daggerplussmallclean.presentation.login.presenter.ILoginPresenter;
 import ru.popov.bodya.daggerplussmallclean.presentation.login.presenter.LoginActivityPresenter;
 
+/**
+ * @author Bogdan Popov
+ */
 @Module
 public class LoginActivityModule {
 

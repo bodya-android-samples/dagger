@@ -7,6 +7,9 @@ import ru.popov.bodya.daggerplussmallclean.data.Account;
 import ru.popov.bodya.daggerplussmallclean.presentation.folders.model.Folder;
 import ru.popov.bodya.daggerplussmallclean.presentation.letters.model.Letter;
 
+/**
+ * @author Bogdan Popov
+ */
 public class ApiService {
 
     public List<Folder> getFolders(Account account) {

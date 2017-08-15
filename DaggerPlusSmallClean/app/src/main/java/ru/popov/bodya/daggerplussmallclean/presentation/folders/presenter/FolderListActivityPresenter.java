@@ -6,6 +6,9 @@ import ru.popov.bodya.daggerplussmallclean.business.mail.MailManager;
 import ru.popov.bodya.daggerplussmallclean.presentation.folders.model.Folder;
 import ru.popov.bodya.daggerplussmallclean.presentation.folders.view.IFoldersView;
 
+/**
+ * @author Bogdan Popov
+ */
 public class FolderListActivityPresenter implements IFoldersPresenter {
 
     private static final String TAG = FolderListActivityPresenter.class.getSimpleName();
