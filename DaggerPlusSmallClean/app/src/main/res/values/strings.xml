@@ -3,4 +3,5 @@
     <string name="folders">Folders</string>
     <string name="letters">Letters</string>
     <string name="login">Login</string>
+    <string name="password">Password</string>
 </resources>

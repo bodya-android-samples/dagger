@@ -1,4 +1,4 @@
-package ru.popov.bodya.daggerplussmallclean.di.common;
+package ru.popov.bodya.daggerplussmallclean.di.login;
 
 import java.lang.annotation.Retention;
 
@@ -11,5 +11,6 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
  */
 @Scope
 @Retention(RUNTIME)
-public @interface ActivityScope {
+public @interface LoginScope {
 }
+
