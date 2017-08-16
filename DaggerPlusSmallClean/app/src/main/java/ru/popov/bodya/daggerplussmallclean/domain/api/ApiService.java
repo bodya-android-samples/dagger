@@ -1,4 +1,4 @@
-package ru.popov.bodya.daggerplussmallclean.business.api;
+package ru.popov.bodya.daggerplussmallclean.domain.api;
 
 import java.util.ArrayList;
 import java.util.List;

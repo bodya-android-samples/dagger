@@ -3,8 +3,8 @@ package ru.popov.bodya.daggerplussmallclean.di.mail;
 
 import dagger.Module;
 import dagger.Provides;
-import ru.popov.bodya.daggerplussmallclean.business.api.ApiService;
-import ru.popov.bodya.daggerplussmallclean.business.mail.MailManager;
+import ru.popov.bodya.daggerplussmallclean.domain.api.ApiService;
+import ru.popov.bodya.daggerplussmallclean.domain.mail.MailManager;
 import ru.popov.bodya.daggerplussmallclean.data.Account;
 
 /**

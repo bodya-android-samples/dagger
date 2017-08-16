@@ -1,8 +1,8 @@
-package ru.popov.bodya.daggerplussmallclean.business.mail;
+package ru.popov.bodya.daggerplussmallclean.domain.mail;
 
 import java.util.List;
 
-import ru.popov.bodya.daggerplussmallclean.business.api.ApiService;
+import ru.popov.bodya.daggerplussmallclean.domain.api.ApiService;
 import ru.popov.bodya.daggerplussmallclean.data.Account;
 import ru.popov.bodya.daggerplussmallclean.presentation.folders.model.Folder;
 import ru.popov.bodya.daggerplussmallclean.presentation.letters.model.Letter;

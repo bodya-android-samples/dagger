@@ -4,8 +4,8 @@ import android.util.Log;
 
 import dagger.Module;
 import dagger.Provides;
-import ru.popov.bodya.daggerplussmallclean.business.account.AccountManager;
-import ru.popov.bodya.daggerplussmallclean.presentation.login.model.LoginDataMapper;
+import ru.popov.bodya.daggerplussmallclean.domain.account.AccountManager;
+import ru.popov.bodya.daggerplussmallclean.presentation.login.mapper.LoginDataMapper;
 import ru.popov.bodya.daggerplussmallclean.presentation.login.presenter.ILoginPresenter;
 import ru.popov.bodya.daggerplussmallclean.presentation.login.presenter.LoginActivityPresenter;
 
@@ -35,6 +35,8 @@ public class LoginActivityModule {
     ILoginPresenter provideLoginActivityPresenter(AccountManager accountManager) {
         return new LoginActivityPresenter(accountManager);
     }
+
+
 
 
 }

@@ -6,7 +6,7 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import ru.popov.bodya.daggerplussmallclean.business.api.ApiService;
+import ru.popov.bodya.daggerplussmallclean.domain.api.ApiService;
 
 /**
  * @author Bogdan Popov

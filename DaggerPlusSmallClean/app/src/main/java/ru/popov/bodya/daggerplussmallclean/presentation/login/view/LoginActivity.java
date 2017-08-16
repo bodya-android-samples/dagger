@@ -1,6 +1,7 @@
 package ru.popov.bodya.daggerplussmallclean.presentation.login.view;
 
 import android.content.Intent;
+import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -13,6 +14,7 @@ import javax.inject.Inject;
 import ru.popov.bodya.daggerplussmallclean.data.application.App;
 import ru.popov.bodya.daggerplussmallclean.R;
 import ru.popov.bodya.daggerplussmallclean.data.Account;
+import ru.popov.bodya.daggerplussmallclean.databinding.ActivityLoginBinding;
 import ru.popov.bodya.daggerplussmallclean.di.login.LoginActivityComponent;
 import ru.popov.bodya.daggerplussmallclean.presentation.folders.view.FolderListActivity;
 import ru.popov.bodya.daggerplussmallclean.presentation.login.model.LoginData;
@@ -27,7 +29,7 @@ public class LoginActivity extends AppCompatActivity implements ILoginView {
 
     @Inject
     ILoginPresenter mPresenter;
-
+    ActivityLoginBinding mActivityLoginBinding;
     private EditText mUserLoginEditText;
     private EditText mPasswordEditText;
 
@@ -35,10 +37,15 @@ public class LoginActivity extends AppCompatActivity implements ILoginView {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        mActivityLoginBinding = DataBindingUtil.setContentView(this,R.layout.activity_login);
         LoginActivityComponent loginActivityComponent = App.getInstance().getAppComponent().createLoginComponent();
-
         Log.e(TAG, "loginActivity = " + loginActivityComponent);
+        mActivityLoginBinding.loginButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
+            }
+        });
         loginActivityComponent.injectLoginActivity(this);
 
         mUserLoginEditText = (EditText) findViewById(R.id.user);

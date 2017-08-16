@@ -1,10 +1,11 @@
-package ru.popov.bodya.daggerplussmallclean.presentation.login.model;
+package ru.popov.bodya.daggerplussmallclean.presentation.login.mapper;
 
 import java.util.Calendar;
 import java.util.Date;
 
 import ru.popov.bodya.daggerplussmallclean.data.Account;
 import ru.popov.bodya.daggerplussmallclean.data.mapper.Mapper;
+import ru.popov.bodya.daggerplussmallclean.presentation.login.model.LoginData;
 
 /**
  * @author Bogdan Popov

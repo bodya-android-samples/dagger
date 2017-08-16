@@ -1,6 +1,6 @@
 package ru.popov.bodya.daggerplussmallclean.presentation.login.presenter;
 
-import ru.popov.bodya.daggerplussmallclean.business.account.AccountManager;
+import ru.popov.bodya.daggerplussmallclean.domain.account.AccountManager;
 import ru.popov.bodya.daggerplussmallclean.data.Account;
 import ru.popov.bodya.daggerplussmallclean.presentation.login.model.LoginData;
 import ru.popov.bodya.daggerplussmallclean.presentation.login.view.ILoginView;

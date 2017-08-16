@@ -2,7 +2,7 @@ package ru.popov.bodya.daggerplussmallclean.presentation.folders.presenter;
 
 import android.util.Log;
 
-import ru.popov.bodya.daggerplussmallclean.business.mail.MailManager;
+import ru.popov.bodya.daggerplussmallclean.domain.mail.MailManager;
 import ru.popov.bodya.daggerplussmallclean.presentation.folders.model.Folder;
 import ru.popov.bodya.daggerplussmallclean.presentation.folders.view.IFoldersView;
 

@@ -6,7 +6,7 @@ import javax.inject.Singleton;
 
 import dagger.Module;
 import dagger.Provides;
-import ru.popov.bodya.daggerplussmallclean.presentation.login.model.LoginDataMapper;
+import ru.popov.bodya.daggerplussmallclean.presentation.login.mapper.LoginDataMapper;
 
 /**
  * @author Bogdan Popov

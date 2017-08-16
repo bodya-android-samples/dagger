@@ -3,7 +3,7 @@ package ru.popov.bodya.daggerplussmallclean.di.folders;
 
 import dagger.Module;
 import dagger.Provides;
-import ru.popov.bodya.daggerplussmallclean.business.mail.MailManager;
+import ru.popov.bodya.daggerplussmallclean.domain.mail.MailManager;
 import ru.popov.bodya.daggerplussmallclean.presentation.folders.presenter.FolderListActivityPresenter;
 import ru.popov.bodya.daggerplussmallclean.presentation.folders.presenter.IFoldersPresenter;
 
