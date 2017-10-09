@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">BasicDagger</string>
+    <string name="msg_format">class instance is: %s</string>
+</resources>
