@@ -1,4 +1,4 @@
-package ru.popov.bodya.basicdagger.di;
+package ru.popov.bodya.basicdagger.di.module;
 
 import dagger.Module;
 import dagger.Provides;

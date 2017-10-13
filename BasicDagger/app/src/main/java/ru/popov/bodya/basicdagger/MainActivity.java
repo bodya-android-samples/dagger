@@ -4,7 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 
+import ru.popov.bodya.basicdagger.di.Names;
 import ru.popov.bodya.basicdagger.net.INetworkApi;
 import ru.popov.bodya.basicdagger.net.NetworkApiWrapper;
 import ru.popov.bodya.basicdagger.storage.IUserRepository;
@@ -20,8 +22,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Inject
     IUserRepository mUserRepository;
+
+    @Named(Names.BACKEND_API)
     @Inject
     INetworkApi mNetworkApi;
+
     @Inject
     NetworkApiWrapper mNetworkApiWrapper;
 
@@ -36,5 +41,6 @@ public class MainActivity extends AppCompatActivity {
         LogUtils.logError(TAG, mUserRepository, getString(R.string.msg_format));
         LogUtils.logError(TAG, mNetworkApi, getString(R.string.msg_format));
         LogUtils.logError(TAG, mNetworkApiWrapper, getString(R.string.msg_format));
+        LogUtils.logError(TAG, mNetworkApiWrapper.getINetworkApi(), getString(R.string.msg_format));
     }
 }

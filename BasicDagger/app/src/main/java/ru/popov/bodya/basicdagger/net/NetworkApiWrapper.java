@@ -11,4 +11,8 @@ public class NetworkApiWrapper {
     public NetworkApiWrapper(INetworkApi INetworkApi) {
         mINetworkApi = INetworkApi;
     }
+
+    public INetworkApi getINetworkApi() {
+        return mINetworkApi;
+    }
 }
