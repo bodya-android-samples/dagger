@@ -1,7 +1,7 @@
 package ru.popov.bodya.basicdagger;
 
 /**
- * Created by Popov Bogdan.
+ * @author Popov Bogdan.
  */
 
 public interface IHasComponent<T> {

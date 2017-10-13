@@ -5,7 +5,7 @@ import android.util.Log;
 import java.util.Locale;
 
 /**
- * Created by Popov Bogdan.
+ * @author Popov Bogdan.
  */
 
 public class LogUtils {

@@ -3,7 +3,7 @@ package ru.popov.bodya.basicdagger;
 import android.app.Application;
 
 /**
- * Created by Popov Bogdan.
+ * @author Popov Bogdan.
  */
 
 public class MyApp extends Application implements IHasComponent<AppComponent> {

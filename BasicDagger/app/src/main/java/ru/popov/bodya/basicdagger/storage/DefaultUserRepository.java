@@ -1,7 +1,7 @@
 package ru.popov.bodya.basicdagger.storage;
 
 /**
- * Created by Popov Bogdan.
+ * @author Popov Bogdan.
  */
 
 public class DefaultUserRepository implements IUserRepository {

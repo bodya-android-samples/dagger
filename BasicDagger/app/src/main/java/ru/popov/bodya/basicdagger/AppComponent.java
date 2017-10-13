@@ -8,15 +8,11 @@ import ru.popov.bodya.basicdagger.net.INetworkApi;
 import ru.popov.bodya.basicdagger.storage.IUserRepository;
 
 /**
- * Created by Popov Bogdan.
+ * @author Popov Bogdan.
  */
 
 @Component(modules = {NetworkModule.class, StorageModule.class})
 public interface AppComponent {
-
-    INetworkApi getNetworkApi();
-
-    IUserRepository getUserRepository();
 
     void injectsMainActivity(MainActivity mainActivity);
 

@@ -7,7 +7,7 @@ import ru.popov.bodya.basicdagger.net.INetworkApi;
 import ru.popov.bodya.basicdagger.net.NetworkApiWrapper;
 
 /**
- * Created by Popov Bogdan.
+ * @author Popov Bogdan.
  */
 
 @Module

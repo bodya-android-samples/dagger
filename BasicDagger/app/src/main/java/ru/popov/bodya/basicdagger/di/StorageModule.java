@@ -6,7 +6,7 @@ import ru.popov.bodya.basicdagger.storage.DefaultUserRepository;
 import ru.popov.bodya.basicdagger.storage.IUserRepository;
 
 /**
- * Created by Popov Bogdan.
+ * @author Popov Bogdan.
  */
 
 @Module

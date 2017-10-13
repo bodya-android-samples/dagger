@@ -10,6 +10,10 @@ import ru.popov.bodya.basicdagger.net.NetworkApiWrapper;
 import ru.popov.bodya.basicdagger.storage.IUserRepository;
 import ru.popov.bodya.basicdagger.utils.LogUtils;
 
+/**
+ * @author Popov Bogdan
+ */
+
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
