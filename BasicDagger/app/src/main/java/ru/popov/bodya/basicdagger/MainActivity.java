@@ -10,7 +10,7 @@ import ru.popov.bodya.basicdagger.di.Names;
 import ru.popov.bodya.basicdagger.net.INetworkApi;
 import ru.popov.bodya.basicdagger.net.NetworkApiWrapper;
 import ru.popov.bodya.basicdagger.storage.IUserRepository;
-import ru.popov.bodya.basicdagger.utils.LogUtils;
+import ru.popov.bodya.basicdagger.utils.Logger;
 
 /**
  * @author Popov Bogdan
@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
         AppComponent appComponent = ((IHasComponent<AppComponent>) getApplication()).getComponent();
         appComponent.injectsMainActivity(this);
 
-        LogUtils.logError(TAG, mUserRepository, getString(R.string.msg_format));
-        LogUtils.logError(TAG, mNetworkApi, getString(R.string.msg_format));
-        LogUtils.logError(TAG, mNetworkApiWrapper, getString(R.string.msg_format));
-        LogUtils.logError(TAG, mNetworkApiWrapper.getINetworkApi(), getString(R.string.msg_format));
+        Logger.e(TAG, mUserRepository, getString(R.string.msg_format));
+        Logger.e(TAG, mNetworkApi, getString(R.string.msg_format));
+        Logger.e(TAG, mNetworkApiWrapper, getString(R.string.msg_format));
+        Logger.e(TAG, mNetworkApiWrapper.getINetworkApi(), getString(R.string.msg_format));
     }
 }

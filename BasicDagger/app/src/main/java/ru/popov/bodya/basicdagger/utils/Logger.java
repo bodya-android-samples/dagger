@@ -8,9 +8,9 @@ import java.util.Locale;
  * @author Popov Bogdan.
  */
 
-public class LogUtils {
+public class Logger {
 
-    public static void logError(String tag, Object object, String msgFormat) {
+    public static void e(String tag, Object object, String msgFormat) {
         if (object == null) {
             Log.e(tag, msgFormat);
             return;
