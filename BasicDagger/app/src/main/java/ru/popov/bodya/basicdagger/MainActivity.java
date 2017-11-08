@@ -6,6 +6,9 @@ import android.os.Bundle;
 import javax.inject.Inject;
 import javax.inject.Named;
 
+import ru.popov.bodya.basicdagger.di.AppComponent;
+import ru.popov.bodya.basicdagger.di.IHasComponent;
+import ru.popov.bodya.basicdagger.di.SubComponent;
 import ru.popov.bodya.basicdagger.di.Names;
 import ru.popov.bodya.basicdagger.net.INetworkApi;
 import ru.popov.bodya.basicdagger.net.NetworkApiWrapper;
@@ -36,7 +39,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         AppComponent appComponent = ((IHasComponent<AppComponent>) getApplication()).getComponent();
-        appComponent.injectsMainActivity(this);
+        SubComponent mySubComponent = appComponent.createMySubComponent();
+
+        mySubComponent.injectsMainActivity(this);
 
         Logger.e(TAG, mUserRepository, getString(R.string.msg_format));
         Logger.e(TAG, mNetworkApi, getString(R.string.msg_format));

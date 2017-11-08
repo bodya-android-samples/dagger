@@ -1,4 +1,4 @@
-package ru.popov.bodya.basicdagger;
+package ru.popov.bodya.basicdagger.di;
 
 /**
  * @author Popov Bogdan.

@@ -1,4 +1,4 @@
-package ru.popov.bodya.basicdagger;
+package ru.popov.bodya.basicdagger.di;
 
 import dagger.Component;
 import ru.popov.bodya.basicdagger.di.module.NetworkModule;
@@ -11,6 +11,6 @@ import ru.popov.bodya.basicdagger.di.module.StorageModule;
 @Component(modules = {NetworkModule.class, StorageModule.class})
 public interface AppComponent {
 
-    void injectsMainActivity(MainActivity mainActivity);
+    SubComponent createMySubComponent();
 
 }

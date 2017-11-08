@@ -2,6 +2,10 @@ package ru.popov.bodya.basicdagger;
 
 import android.app.Application;
 
+import ru.popov.bodya.basicdagger.di.AppComponent;
+import ru.popov.bodya.basicdagger.di.DaggerAppComponent;
+import ru.popov.bodya.basicdagger.di.IHasComponent;
+
 /**
  * @author Popov Bogdan.
  */
