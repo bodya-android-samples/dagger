@@ -17,7 +17,7 @@ public class MyApp extends Application implements IHasComponent<AppComponent> {
     @Override
     public void onCreate() {
         super.onCreate();
-        mComponent = DaggerAppComponent.create();
+        mComponent = DaggerAppComponent.builder().build();
     }
 
     @Override
