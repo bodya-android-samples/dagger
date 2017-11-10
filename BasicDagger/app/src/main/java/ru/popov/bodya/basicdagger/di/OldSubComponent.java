@@ -8,7 +8,7 @@ import ru.popov.bodya.basicdagger.MainActivity;
  */
 
 @Subcomponent
-public interface SubComponent {
+public interface OldSubComponent {
 
     void injectsMainActivity(MainActivity mainActivity);
 

@@ -11,6 +11,8 @@ import ru.popov.bodya.basicdagger.di.module.StorageModule;
 @Component(modules = {NetworkModule.class, StorageModule.class})
 public interface AppComponent {
 
-    SubComponent createMySubComponent();
+    OldSubComponent createOldMySubComponent();
+
+    ModernSubComponent.ModernBuilder modernSubComponentBuilder();
 
 }
